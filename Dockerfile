@@ -1,4 +1,5 @@
 ARG BASE_IMAGE=debian:bookworm-slim
+ARG BUILDPLATFORM
 
 # Mutli-stage build to keep final image small. Otherwise end up with
 # curl and openssl installed

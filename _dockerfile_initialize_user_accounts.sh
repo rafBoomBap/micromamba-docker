@@ -22,7 +22,7 @@ else  # debian
   fi
 
   if [ ! "$(id -u "${MAMBA_USER}" 2> /dev/null)" == "${MAMBA_USER_ID}" ]; then
-    useradd -u "${MAMBA_USER_ID}" -g "${MAMBA_USER_GID}" -ms /bin/bash "${MAMBA_USER}"
+    useradd -l -u "${MAMBA_USER_ID}" -g "${MAMBA_USER_GID}" -ms /bin/bash "${MAMBA_USER}"
   fi
 fi
 
